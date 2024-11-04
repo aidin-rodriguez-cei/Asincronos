@@ -1,0 +1,212 @@
+/* Estilos generales */
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color de texto por defecto (tema claro) */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el tema oscuro */
+.dark {
+    background-color: #333;
+    color: #fff; /* Color del texto en tema oscuro */
+}
+
+.dark header {
+    background-color: #444;
+    color: #fff; /* Color del texto en el header cuando es oscuro */
+}
+
+.dark nav a,
+.dark .theme-toggle {
+    color: #fff; /* Color del texto de los enlaces y botones en tema oscuro */
+}
+
+.dark .catalog-container {
+    color: #333; /* Color del texto dentro de las cajas de catálogo en tema oscuro */
+}
+
+/* Estilos para el tema claro */
+.light {
+    background-color: #f4f4f4;
+    color: #333; /* Color del texto en tema claro */
+}
+
+.light header {
+    background-color: #fff;
+    color: #333; /* Color del texto en el header cuando es claro */
+}
+
+.light nav a {
+    color: #333; /* Color de los enlaces en tema claro */
+}
+
+.light .theme-toggle {
+    background-color: #f4f4f4; /* Gris claro de la página */
+    color: #333; /* Color del texto en el botón de tema claro */
+}
+
+/* Otros estilos */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between; /* Espaciado entre el navbar y el botón de tema */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: inherit; /* Heredar el color del tema */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: inherit; /* Heredar el color de fondo del tema */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo para hover */
+}
+
+.theme-toggle {
+    padding: 10px 20px;
+    border: none;
+    background-color: inherit; /* Heredar el color de fondo del tema */
+    color: inherit; /* Heredar el color del texto del tema */
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Color más oscuro para el hover */
+}
+
+/* Estilos para la página de Home */
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-container h1 {
+    font-size: 2.5em;
+    color: inherit; /* Heredar el color del texto del tema */
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    font-size: 1.2em;
+    color: inherit; /* Heredar el color del texto del tema */
+    margin-bottom: 30px;
+}
+
+.ingreso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingreso-container input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    font-family: inherit;
+    width: 100%;
+    max-width: 300px;
+}
+
+.ingreso-container input:focus {
+    border-color: #1b1c1e;
+}
+
+.ingreso-container button {
+    padding: 15px 30px;
+    background-color: #9500ff;
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.ingreso-container button:hover {
+    background-color: #7800d4;
+}
+
+/* Estilos para la página de Catalogo */
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.peliculas {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 250px; /* Ancho aumentado de las cajas de películas */
+    text-align: center;
+    color: inherit; /* Heredar el color del texto del tema */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra sutil */
+}
+
+.peliculas img {
+    width: 100%;
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen mantenga la proporción sin distorsionarse */
+    border-radius: 5px;
+}
+
+.peliculas h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: inherit; /* Heredar el color del texto del tema */
+}
+
+.peliculas p {
+    margin: 5px 0;
+    color: inherit; /* Heredar el color del texto del tema */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-container p {
+    margin-right: 10px;
+    color: inherit; /* Heredar el color del texto del tema */
+}
+
+.no-peliculas {
+    text-align: center;
+    font-size: 1.5em;
+    color: inherit; /* Heredar el color del texto del tema */
+}
+

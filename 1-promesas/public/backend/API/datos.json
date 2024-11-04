@@ -1,0 +1,54 @@
+{
+    "status": "ok",
+    "usuarios": [
+      {
+        "id": "user-01",
+        "nombre": "Aidin",
+        "clave": "1234!"
+      },
+      {
+        "id": "user-02",
+        "nombre": "Lara",
+        "clave": "4321"
+      }
+    ],
+
+    "peliculas": [
+        {
+          "id": "peli-1",
+          "idUsuario": "user-01",
+          "titulo": "50 First Dates",
+          "director": "Peter Segal",
+          "anio": "2004",
+          "checked": false,
+          "imagen": "https://hips.hearstapps.com/cosmouk.cdnds.net/17/03/1484822240-50-first-dates.jpg?resize=1200:*"
+        },
+        {
+            "id": "peli-2",
+            "idUsuario": "user-01",
+            "titulo": "Sherlock Holmes",
+            "director": "Guy Ritchie",
+            "anio": "2009",
+            "checked": false,
+            "imagen": "https://img.asmedia.epimg.net/resizer/v2/5IVIDTIFJJF4FPVSPNTCL42EVE.jpg?auth=0dc9e916d1b4e5dc8362d3f9e02421b3ff523727d0d5b5b7389fdb11cb1c96e0&width=1472&height=828&smart=true"
+          },
+          {
+            "id": "peli-3",
+            "idUsuario": "user-02",
+            "titulo": "Mary Poppins",
+            "director": "Robert Stevenson",
+            "anio": "1964",
+            "checked": false,
+            "imagen": "https://www.lavanguardia.com/peliculas-series/images/movie/poster/1964/12/w1280/8hU9v0EYEiAWYOkROcy4iWnSNpl.jpg"
+          },
+          {
+              "id": "peli-4",
+              "idUsuario": "user-02",
+              "titulo": "Mi pobre angelito",
+              "director": "Chris Columbus",
+              "anio": "1990",
+              "checked": false,
+              "imagen": "https://m.media-amazon.com/images/S/pv-target-images/d7eb4c08dd806241b67fe5faf230274596d8d3b31400e016c969cae354c89d9d.jpg"
+            }
+      ] 
+}
